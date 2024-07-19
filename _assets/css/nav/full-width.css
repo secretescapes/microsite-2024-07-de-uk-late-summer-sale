@@ -1,6 +1,6 @@
 $nav-min-width: 760px;
 .nav {
-  @apply relative text-textBlack bg-white bg-opacity-70;
+  @apply relative text-black bg-white bg-opacity-90;
   &__scroll-wrap {
     @apply flex max-w-screen-3xl mx-auto overflow-x-auto overflow-y-hidden border-r border-white border-opacity-50;
     &:before {
@@ -22,7 +22,7 @@ $nav-min-width: 760px;
   }
   &__item {
     @apply flex flex-grow flex-shrink-0 items-stretch flex-col h-16 uppercase font-semibold tracking-wider border-l border-white border-opacity-50 transition-colors duration-200 ease-in-out;
-    font-size: 0.9rem;
+    font-size: 1rem;
     &.is-current {
       @apply bg-white bg-opacity-70 border-opacity-0;
     }
