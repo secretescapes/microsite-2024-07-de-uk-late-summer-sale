@@ -1,7 +1,7 @@
 ---
 layout: standard
 id: all
-title: All Sale Deals
+title: Alle Angebote im Sale
 nav: true
 nav-order: 1
 header-content: >
@@ -12,16 +12,16 @@ header-content: >
 
 <div class="page-padding text-textBlack content-spacing bg-white">
   <div class="mx-auto max-w-screen-lg py-20 text-center">
-    <h2 class="h4">Bigger savings in the Late-Summer Sale!</h2>
-    <p class="text-lg">Get the lowest prices on amazing deals and destinations around the world!</p>
+    <h2 class="h4">Noch mehr sparen im Spätsommer-Sale!</h2>
+    <p class="text-lg">Entdecken Sie Top-Angebote zu Tiefstpreisen!</p>
     <p class="text-lg">{{site.description}}</p>
-    <p class="text-lg">Browse our dreamy collections to find a bargain escape you can't refuse! </p>
-    {% include countdown.html message="The Late-Summer Sale ends in:" class="text-lg" %}
+    <p class="text-lg">Lassen Sie sich von unseren Sale-Kollektionen inspirieren und entdecken Sie Ihren nächsten Traumurlaub.</p>
+    {% include countdown.html message="Der Spätsommer-Sale endet in:" class="text-lg" %}
   </div>
 </div>
 
 <div class="page-padding content-spacing">
   <div class="mx-auto max-w-screen-3xl pb-24">
-    {% include component/se-offers.html tag="zz_UK_summersale" %}
+    {% include component/se-offers.html tag="zz_DE_summersale" %}
   </div>
 </div>

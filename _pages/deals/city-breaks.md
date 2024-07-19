@@ -1,13 +1,17 @@
 ---
 layout: group-page
 id: city-breaks
-title: City breaks
+title: Städtetrips
 permalink: /city-breaks/
 group-parent: deals
 group-order: 4
+header-content: >
+  <h1 class="h--banner">
+    Städte&shy;trips
+  </h1>
 intro:
-  - Exciting city breaks for culture vultures!
-  - Sightseeing in Valletta, gourmet getaways in Copenhagen, soaking up some culture in Paris or Rome, you can do it all with our low prices on European city breaks! Escape to the city for less with our incredible Late-Summer Sale deals.
-intro-title: Thrilling city breaks
-offer-tag: zz_UK_SummerCity
+  - Sommer in der City? Na klar!
+  - Lust auf Kunst, Kultur und Kulinarik? In unserem großen Spätsommer-Sale finden Sie luxuriöse City-Hotels zu unwiderstehlichen Tiefstpreisen. Freuen Sie sich auf erlebnisreiche Tage in den aufregensten europäischen Metropolen mit dieser handverlesenen Auswahl an Angeboten mit riesigen Rabatten.
+intro-title: Aufregende Städtetrips
+offer-tag: zz_DE_SummerCity
 ---

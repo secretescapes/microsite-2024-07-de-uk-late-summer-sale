@@ -1,17 +1,17 @@
-locale: uk
-title: Late Summer Sale
+locale: de
+title: Spätsommer-Sale
 description: >
-  Now is the time to book your next getaway at the best price. We've got even bigger discounts on fantastic Med beach breaks, UK staycations, city breaks and far-flung sun! Awesome deals come and go, and dates sell out fast, so don't miss out - book before it's too late. Hurry, the SALE ends at 10 am on 5th August!
+  Die beste Zeit zu buchen ist jetzt! Sichern Sie sich fantastische Rabatte auf Strandurlaube am Mittelmeer, Auszeiten in Ihrer Nähe, europäische Städtereisen und luxuriöse Fernreisen. Der Spätsommer-Sale endet am 5. August um 11 Uhr, also zögern Sie nicht lange und schnappen Sie sich Ihren Lieblings-Deal, bevor es zu spät ist!
 
 # value for cross site countdown timer
-expires: 2024/08/05 10:00:00
+expires: 2024/08/05 11:00:00
 
 # file paths
 url: "https://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/uk/2024/late-summer-sale/" # the subpath of your site, e.g. /blog/
-img: "/uk/2024/late-summer-sale/_assets/img"
-css: "/uk/2024/late-summer-sale/_assets/css"
-js: "/uk/2024/late-summer-sale/_assets/js"
+baseurl: "/de/2024/sommer-sale" # the subpath of your site, e.g. /blog/
+img: "/de/2024/sommer-sale/_assets/img"
+css: "/de/2024/sommer-sale/_assets/css"
+js: "/de/2024/sommer-sale/_assets/js"
 
 exclude:
   [
