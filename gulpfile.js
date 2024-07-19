@@ -26,7 +26,7 @@ const cleanAssets = () => del(["./_site/_assets/**/*"]);
 
 // start browserSync local server - show under site subdirectory
 const browserSyncServe = () => {
-  const baseurl = "/_marketing/promo-template/uk";
+  const baseurl = "/uk/2024/late-summer-sale";
   browserSync.init({
     baseDir: "_site/",
     ui: false,

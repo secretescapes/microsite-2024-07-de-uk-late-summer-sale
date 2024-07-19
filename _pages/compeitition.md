@@ -12,19 +12,19 @@ intro: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non f
 intro-terms: >
   For full T&Cs read <a href="#modal-competition-terms" class="js-open-modal underline">here</a>
 
-# hotels:
-#   - id: x
-#     title: Lorem ipsum dolor sit amet consectetur adipisicing elit
-#     hotel: Hotel name lorem ipsum dolor
-#     description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptate error eveniet exercitationem obcaecati nam beatae, impedit fuga recusandae esse architecto totam tempore consequatur! Laudantium magni magnam ut illo fugiat laborum odio veritatis tenetur illum, dolore minima porro animi? Optio.
-#   - id: x
-#     title: Lorem ipsum dolor sit amet consectetur adipisicing elit
-#     hotel: Hotel name lorem ipsum dolor
-#     description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptate error eveniet exercitationem obcaecati nam beatae, impedit fuga recusandae esse architecto totam tempore consequatur! Laudantium magni magnam ut illo fugiat laborum odio veritatis tenetur illum, dolore minima porro animi? Optio.
-#   - id: x
-#     title: Lorem ipsum dolor sit amet consectetur adipisicing elit
-#     hotel: Hotel name lorem ipsum dolor
-#     description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptate error eveniet exercitationem obcaecati nam beatae, impedit fuga recusandae esse architecto totam tempore consequatur! Laudantium magni magnam ut illo fugiat laborum odio veritatis tenetur illum, dolore minima porro animi? Optio.
+hotels:
+  - id: x
+    title: Lorem ipsum dolor sit amet consectetur adipisicing elit
+    hotel: Hotel name lorem ipsum dolor
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptate error eveniet exercitationem obcaecati nam beatae, impedit fuga recusandae esse architecto totam tempore consequatur! Laudantium magni magnam ut illo fugiat laborum odio veritatis tenetur illum, dolore minima porro animi? Optio.
+  - id: x
+    title: Lorem ipsum dolor sit amet consectetur adipisicing elit
+    hotel: Hotel name lorem ipsum dolor
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptate error eveniet exercitationem obcaecati nam beatae, impedit fuga recusandae esse architecto totam tempore consequatur! Laudantium magni magnam ut illo fugiat laborum odio veritatis tenetur illum, dolore minima porro animi? Optio.
+  - id: x
+    title: Lorem ipsum dolor sit amet consectetur adipisicing elit
+    hotel: Hotel name lorem ipsum dolor
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptate error eveniet exercitationem obcaecati nam beatae, impedit fuga recusandae esse architecto totam tempore consequatur! Laudantium magni magnam ut illo fugiat laborum odio veritatis tenetur illum, dolore minima porro animi? Optio.
 
 competition-form:
   id: comp
