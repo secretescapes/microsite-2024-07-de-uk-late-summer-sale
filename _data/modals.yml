@@ -1,0 +1,48 @@
+- id: competition-terms
+  pages:
+    - competition
+    - entered
+  content: >
+    <div class="modal__content max-w-screen-xl content-spacing">
+      <h1 class="h3">Terms & Conditions</h1>
+      <h2 class="h5 mt-6">Subtitle heading</h2>
+      <ol class="continuing-list continuing-list--start">
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi obcaecati dolorum accusamus ex non qui numquam amet officiis magnam incidunt ipsam, culpa placeat omnis hic, assumenda cum quia. Fugit, delectus.</li>
+        <li>Animi quaerat dolor nisi illo rerum repudiandae cum molestiae iure eaque possimus nihil asperiores obcaecati quos, quo, quae ab rem delectus harum pariatur maxime. Accusamus officia inventore iste corporis totam!</li>
+        <li>Ab saepe sapiente eaque nihil hic, quis, veniam optio autem et repellat maiores error alias? Deleniti ratione hic, laboriosam blanditiis quo corrupti animi id facilis temporibus, commodi, culpa tempora suscipit.</li>
+        <li>Repudiandae ipsa eveniet aspernatur itaque veritatis obcaecati animi dolores unde. Maxime deleniti in quod id, nesciunt aliquid ullam deserunt, unde blanditiis ipsam doloremque quae a dolorum. Delectus quas eos officia?</li>
+      </ol>
+      <h2 class="h5 mt-6">Subtitle heading</h2>
+      <ol class="continuing-list">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti sed unde consectetur adipisci similique explicabo, quibusdam quas possimus doloribus?</li>
+        <li>
+          <div>
+            Natus ea, itaque dolorem totam illum aperiam nobis accusamus, dicta reiciendis facere nisi labore esse atque architecto tempore? Non, quas!
+            <ol class="ol--letters">
+              <li>
+                <div>
+                  Lorem ipsum dolor sit amet.
+                  <ol class="ol--roman">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Molestiae quibusdam neque sed exercitationem.</li>
+                    <li>Alias obcaecati cupiditate provident et.</li>
+                  </ol>
+                </div>
+              </li>
+              <li>Molestiae quibusdam neque sed exercitationem.</li>
+              <li>Alias obcaecati cupiditate provident et.</li>
+            </ol>
+          </div>
+        </li>
+        <li>Pariatur, officia illum optio expedita nam asperiores voluptas dolore quos modi veniam corporis facilis facere. Eaque molestias quis labore molestiae.</li>
+      </ol>
+      <h2 class="h5 mt-6">Subtitle heading</h2>
+      <ol class="continuing-list">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique perferendis assumenda repellat, doloribus commodi sapiente eaque ipsum vero voluptas maxime alias cumque. Quae at facere aliquid delectus quo vero obcaecati natus earum magnam cumque sunt deleniti dolorem enim fuga nisi aut itaque doloremque voluptatum, eum numquam nostrum rerum, quas saepe?</li>
+        <li>Alias numquam unde maiores consequatur, tempore voluptatem! Dolores quis assumenda ipsum animi dolorem ullam fugit maiores est possimus, et eum veniam? Ut nemo unde dolorem, perferendis magni in illo dolorum sunt voluptates molestias dolores, ducimus rem corporis quo fugit non minus. A dignissimos quisquam repudiandae minima odit sunt voluptates soluta?</li>
+        <li>Neque repellendus similique eos animi, esse architecto atque eum est reiciendis dolorem voluptatum corporis accusamus, minus ipsam nemo numquam. Sunt dicta ducimus earum unde. Culpa aperiam quaerat, tempora sunt, exercitationem dolor accusamus voluptate quo nobis natus pariatur blanditiis praesentium ea placeat quasi ex ipsam! Quo unde architecto eveniet aperiam sapiente?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique perferendis assumenda repellat, doloribus commodi sapiente eaque ipsum vero voluptas maxime alias cumque. Quae at facere aliquid delectus quo vero obcaecati natus earum magnam cumque sunt deleniti dolorem enim fuga nisi aut itaque doloremque voluptatum, eum numquam nostrum rerum, quas saepe?</li>
+        <li>Alias numquam unde maiores consequatur, tempore voluptatem! Dolores quis assumenda ipsum animi dolorem ullam fugit maiores est possimus, et eum veniam? Ut nemo unde dolorem, perferendis magni in illo dolorum sunt voluptates molestias dolores, ducimus rem corporis quo fugit non minus. A dignissimos quisquam repudiandae minima odit sunt voluptates soluta?</li>
+        <li>Neque repellendus similique eos animi, esse architecto atque eum est reiciendis dolorem voluptatum corporis accusamus, minus ipsam nemo numquam. Sunt dicta ducimus earum unde. Culpa aperiam quaerat, tempora sunt, exercitationem dolor accusamus voluptate quo nobis natus pariatur blanditiis praesentium ea placeat quasi ex ipsam! Quo unde architecto eveniet aperiam sapiente?</li>
+      </ol>
+    </div>

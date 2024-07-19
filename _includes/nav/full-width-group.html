@@ -1,0 +1,27 @@
+<div class="sticky-nav-wrap">
+  <nav class="js-sticky-nav nav{% if include.dark %} nav--dark{% endif %}">
+    <div class="nav__scroll-wrap">
+      {% assign nav-pages = site.html_pages | where: 'nav', 'true' | sort: 'nav-order' %}
+      {% for nav-page in nav-pages %}
+        <div class="nav__item{% if page.id == nav-page.id or page.layout == nav-page.id %} is-current{% endif %}">
+          <a href="{{site.baseurl}}{{nav-page.url}}">
+            {% if nav-page.nav-title %}
+              {{nav-page.nav-title}}
+            {% else %}
+              {{nav-page.title}}
+            {% endif %}
+          </a>
+        </div>
+          {% if nav-page.group and include.theme != "footer" %}
+            {% assign group-id = nav-page.id %}
+            {% assign group-pages = site.html_pages | where: 'group-parent', group-id | sort: 'group-order' %}
+            <div class="group-nav">
+              {% for group-page in group-pages %}
+                <a class="group-nav__link{% if group-page.id == page.id %} is-current{% endif %}" href="{{site.baseurl}}{{group-page.url}}" style="background-image: url('{{site.img}}/content/{{group-page.id}}/nav-drop-down.jpg');"><span>{% if group-page.group-nav-title %}{{group-page.group-nav-title}}{% else %}{{group-page.title}}{% endif %}</span></a>
+              {% endfor %}
+            </div>
+          {% endif %}
+      {% endfor %}
+    </div>
+  </nav>
+</div>

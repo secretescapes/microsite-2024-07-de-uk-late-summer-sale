@@ -1,0 +1,4 @@
+{% if include.message %}
+  <p class="js-countdown-message{% if include.class %} {{include.class}}{% endif %}">{{include.message}}</p>
+{% endif %}
+<div class="js-countdown" data-expires="{{site.expires}}"></div>

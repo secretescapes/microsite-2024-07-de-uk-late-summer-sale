@@ -1,0 +1,74 @@
+.offer-sort {
+  @apply relative z-0 flex flex-row justify-end mb-4;
+  border-color: theme("colors.grey.100");
+  box-sizing: border-box;
+  & * {
+    box-sizing: border-box;
+  }
+  & [class*="decor"] {
+    line-height: 0;
+  }
+  & [class*="-field"] {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    line-height: 1;
+    font-family: theme("fontFamily.sans");
+    width: 100%;
+    color: theme("colors.grey.600");
+  }
+  & ::-webkit-search-decoration {
+    display: none;
+  }
+  & select::-webkit-input-placeholder {
+    line-height: normal;
+  }
+  & .input-field,
+  & .select-field__menu {
+    @apply bg-white py-3 px-2;
+    border: 1px solid theme("colors.grey.200");
+    border-radius: 3px;
+    font-size: 17px;
+    & + & {
+      @apply mt-6;
+    }
+  }
+
+  /***************** SELECT FIELD Option driven fields such as <select> menus */
+  & .select-field {
+    display: inline-block;
+    position: relative;
+    & option:disabled {
+      color: theme("colors.grey.100");
+    }
+  }
+  & .select-field__menu {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    @apply pr-10;
+    line-height: 1.4;
+  }
+  & .select-field__menu:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 theme("colors.grey.700");
+  }
+  & .select-field__menu::-ms-expand {
+    display: none;
+  }
+  & .select-field__decor {
+    @apply z-0 mr-4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9px;
+    pointer-events: none;
+    > svg path {
+      fill: theme("colors.grey.500");
+    }
+  }
+}

@@ -1,0 +1,116 @@
+---
+layout: standard
+---
+
+{% assign comp-page = site.html_pages | where: 'permalink', '/competition/' | first %}
+{% include var.html %}
+
+<div class="page-padding text-textBlack content-spacing">
+  <div class="mx-auto max-w-screen-lg pt-20 text-center">
+    <p class="text-2xl font-bold font-display leading-normal">{{comp-page.intro-title}}</p>
+    <p class="text-lg">{{comp-page.intro}}</p>
+    <p class="text-lg">{{comp-page.intro-terms}}</p>
+    <div class="h-4"></div>
+    <a href="#entry-form" class="btn">{{locale.competition.enter}}</a>
+  </div>
+  <div class="mx-auto max-w-screen-3xl pt-20">
+    {% if comp-page.hotels %}
+      {% for item in comp-page.hotels %}
+        <div class="bob{% cycle '', ' bob--swap' %}">
+          <div class="img photo-scatter">
+            <div class="row row--gutter-0">
+              <div class="col col--sm-5">
+                <div class="bg-ratio bg-ratio--2-3 photo-scatter__first" style="background-image: url('{{site.img}}/content/{{comp-page.id}}/{{item.id}}-01.jpg');"></div>
+              </div>
+              <div class="col col--sm-7">
+                <div class="bg-ratio bg-ratio--4-3 photo-scatter__second" style="background-image: url('{{site.img}}/content/{{comp-page.id}}/{{item.id}}-02.jpg');"></div>
+              </div>
+            </div>
+            <div class="bg-ratio bg-ratio--21-9 photo-scatter__third" style="background-image: url('{{site.img}}/content/{{comp-page.id}}/{{item.id}}-03.jpg');"></div>
+          </div>
+          <div class="text">
+            <h2 class="h4">{{item.title}}</h2>
+            <div class="flex items-center gap-2.5 pt-3 pb-1">
+              <img src="{{site.img}}/icons/hotel-plain.svg" alt="hotel icon">
+              <div class="uppercase tracking-wide font-semibold">
+                {{item.hotel}}
+              </div>
+            </div>
+            <p class="text-lg">{{item.description}}</p>
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <div class="row row--constant-4-4-4 row--gutter-0">
+        <div class="col">
+          <div class="bg-ratio bg-ratio--1-1" style="background-image: url('{{site.img}}/content/{{comp-page.id}}/01.jpg');"></div>
+        </div>
+        <div class="col">
+          <div class="bg-ratio bg-ratio--1-1" style="background-image: url('{{site.img}}/content/{{comp-page.id}}/02.jpg');"></div>
+        </div>
+        <div class="col">
+          <div class="bg-ratio bg-ratio--1-1" style="background-image: url('{{site.img}}/content/{{comp-page.id}}/03.jpg');"></div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<div id="entry-form" class="content-spacing page-padding py-24 text-textBlack">
+  {% if page.permalink == '/competition/' %}
+    {% assign form = page.competition-form %}
+    <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
+      {% include component/form/messages.html %}
+      <div class="form__content mx-auto max-w-screen-md">
+        <h3 class="font-serif font-bold text-partner-black text-2xl leading-snug text-center mb-5">{{locale.competition.chance-to-win}}</h3>
+        {% for item in form.fields %}
+          <div class="form__input js-form-input">
+            {% case item.type %}
+              {% when 'text' %}
+                {% include component/form/text.html data=item %}
+              {% when 'text-long' %}
+                {% include component/form/text-long.html data=item %}
+              {% when 'email' %}
+                {% include component/form/email.html data=item %}
+              {% when 'radio' %}
+                {% include component/form/radio.html data=item %}
+              {% when 'checkbox' %}
+                {% include component/form/checkbox.html data=item %}
+              {% when 'select' %}
+                {% include component/form/select.html data=item %}
+            {% endcase %}
+          </div>
+        {% endfor %}
+        <div class="py-4">
+          <p class="text-sm">{{form.terms}}</p>
+        </div>
+        <button type="submit" class="btn" disabled>{{form.submit}}</button>
+      </div>
+    </form>
+  {% else %}
+    <form class="form boilerform competition-form" novalidate>
+      <div class="form__messages" style="display: block;">
+        <div class="message" style="display: block;">
+          <div class="mx-auto max-w-screen-md">
+            <div class="h3">{{locale.competition.entered.title}}</div>
+            <p class="text-xl">{{locale.competition.entered.description}}</p>
+            <div class="h-4"></div>
+            <a href="#deals" class="btn">{{locale.competition.entered.cta}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="form__content max-w-screen-md">
+        <div class="h-96"></div>
+      </div>
+    </form>
+  {% endif %}
+</div>
+
+<div id="deals" class="page-padding content-spacing bg-grey-50 py-24">
+  <div class="mx-auto max-w-screen-3xl">
+    <div class="text-center pb-8">
+      <h3 class="h3">{{locale.competition.deals-heading}}</h3>
+    </div>
+    {% include component/se-offers.html tag="zz_UKsummersaleALL" %}
+  </div>
+</div>

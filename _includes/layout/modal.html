@@ -1,0 +1,17 @@
+{% if site.data.modals.size > 0 %}
+  {% assign all-page-modals = site.data.modals | where: "pages", null %}
+  {% assign this-page-modals = site.data.modals | where: "pages", page.id %}
+  {% assign modals = all-page-modals | concat: this-page-modals %}
+  {% if modals.size > 0 %}
+    <div class="js-modal modal__bg is-closed">
+      <div class="modal__wrap">
+        {% for modal in modals %}
+          <div id="modal-{{modal.id}}" class="modal is-closed" data-modal-id="{{modal.id}}">
+            <div class="js-close-modal modal__close"></div>
+            {{modal.content | liquify}}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endif %}

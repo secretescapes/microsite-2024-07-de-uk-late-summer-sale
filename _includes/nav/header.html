@@ -1,0 +1,56 @@
+<header class="header">
+  <div class="wrap">
+    <div class="left">
+      <a class="icon js-mobile-nav" href="#0" >
+        <img src="{{site.img}}/icons/menu.svg" alt="Menu icon" />
+      </a>
+    </div>
+    <div class="middle">
+      <div class="middle__top">
+        {% include component/logo-se.html %}
+        <div class="top-links">
+          {% for item in locale.core-nav.header-right %}
+            <a href="{% if item.full-link %}{{item.link}}{% else %}{{locale.core-nav.site}}{{item.link}}{% endif %}">{{item.text}}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="middle__bottom">
+        <div class="links">
+          {% for item in locale.core-nav.header %}
+            {% if item.sub == null %}
+              <a href="{% if item.full-link %}{{item.link}}{% else %}{{locale.core-nav.site}}{{item.link}}{% endif %}">{{item.text}}</a>
+            {% else %}
+              <div class="js-nav-menu sub-menu is-closed">{{item.text}} <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" fill="none"><path fill="#fff" d="M0 0h9L4.5 5 0 0Z"/></svg>
+                <div class="sub-menu__content">
+                  {% for sub-item in item.sub %}
+                    <a href="{% if sub-item.full-link %}{{sub-item.link}}{% else %}{{locale.core-nav.site}}{{sub-item.link}}{% endif %}" class="sub-menu__link">{{sub-item.text}}</a>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+          <a href="{{site.baseurl}}">{{site.title}}</a>
+        </div>
+        <div class="favourites">
+          <a href="{% if locale.core-nav.header-fav.full-link %}{{locale.core-nav.header-fav.link}}{% else %}{{locale.core-nav.site}}{{locale.core-nav.header-fav.link}}{% endif %}">
+            <svg viewBox="0 0 18 16" width="18" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.992 16s5.294-5.274 7.326-7.44c2.032-2.166 2.164-4.48.713-6.524C15.333-.356 11.864-.808 9 1.592 6.136-.812 2.667-.356.97 2.036-.483 4.08-.35 6.394 1.681 8.56 3.714 10.726 8.992 16 8.992 16Z" fill="#ffffff"/></svg> {{locale.core-nav.header-fav.text}}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="right"></div>
+  </div>
+  <div class="mobile-nav is-closed">
+    <div class="top">
+      <a class="icon js-mobile-nav" href="#0" >
+        <img src="{{site.img}}/icons/close.svg" alt="Close icon" />
+      </a>
+    </div>
+    <div class="middle">
+      {% for item in locale.core-nav.header %}
+        <a href="{% if item.full-link %}{{item.link}}{% else %}{{locale.core-nav.site}}{{item.link}}{% endif %}">{{item.text}}</a>
+      {% endfor %}
+      <a href="{{site.baseurl}}">{{site.title}}</a>
+    </div>
+  </div>
+</header>

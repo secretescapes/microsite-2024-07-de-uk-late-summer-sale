@@ -1,0 +1,26 @@
+---
+layout: standard
+---
+
+{% include var.html %}
+
+<div class="page-padding text-textBlack content-spacing">
+  <div class="mx-auto max-w-screen-3xl py-24">
+    {% assign topic-pages = site.html_pages | where: 'group-parent', 'deals' | sort: 'group-order' %}
+    {% for topic-page in topic-pages %}
+      <div class="bob{% cycle '', ' bob--swap'%}">
+        <div class="img">
+          <div class="bg-ratio bg-ratio--3-2 bg-grey-100" style="background-image: url('{{site.img}}/content/{{topic-page.id}}/nav.jpg');">
+            <a class="absolute top-0 left-0 right-0 bottom-0" href="{{site.baseurl}}{{topic-page.url}}"></a>
+          </div>
+        </div>
+        <div class="text content-spacing">
+          <h3 class="h2">{{topic-page.title}}</h3>
+          <p class="text-lg">{{topic-page.intro}}</p>
+          <div class="h-4"></div>
+          <a href="{{site.baseurl}}{{topic-page.url}}" class="btn">{{locale.general.see-deals}}</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

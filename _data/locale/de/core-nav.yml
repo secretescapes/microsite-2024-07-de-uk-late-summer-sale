@@ -1,0 +1,188 @@
+site: https://www.secretescapes.de
+
+header:
+  - text: Aktuelle Angebote
+    link: /aktuelle-angebote
+  - text: Hotels
+    link: /hotels/filter
+  - text: Pauschalreisen
+    link: /rundreisen/filter
+  - text: Beliebte Reiseziele
+    sub:
+      - text: Österreich
+        link: /search/search?query=Oesterreich&searchBoxLocation=top
+      - text: Sri Lanka
+        link: /search/search?query=Sri+Lanka
+      - text: Südtirol
+        link: /search/search?query=Südtirol
+      - text: Kanarische Inseln
+        link: /search/search?query=Kanarische+Inseln
+      - text: Bayern
+        link: /search/search?query=Bayern%2C+Deutschland
+  - text: Aktionen
+    sub:
+      - text: Deals der Woche
+        link: /zeitlich-begrenzte-angebote/filter
+      - text: Letzte Chance!
+        link: /endet-bald/filter
+      - text: Brandneue Angebote
+        link: /neue-angebote/filter
+      - text: Zeitlich begrenzte Angebote
+        link: /zeitlich-begrenzte/filter
+  - text: Gutscheine
+    link: /vouchers-offer
+  - text: Inspirieren lassen
+    link: https://magazine.secretescapes.de/
+    full-link: true
+
+header-fav:
+  text: Meine Favoriten
+  link: /meine-favoriten
+
+header-right:
+  - text: Empfehlen Sie uns
+    link: /freunde-einladen
+  - text: Kundenservice
+    link: /faq
+
+footer:
+  text:
+    featured: Bekannt aus
+    secure: We are secure
+    collections: Kollektionen
+  features:
+    - id: price
+      icon: rosette
+      title: Bestpreisgarantie
+      description: Mit uns sichern Sie sich die günstigsten Hotelpreise, die online verfügbar sind – das versprechen wir Ihnen!
+    - id: picked
+      icon: hotel
+      title: Von Experten handverlesene Hotels
+      description: Als Mitglied erhalten Sie Zugriff auf eine große Auswahl stilvoller Hotels und Reisen, die eigens von unseren Experten ausgewählt wurden.
+    - id: extras
+      icon: serve
+      title: Zusätzliche Extras
+      description: Luxuriöse Extras und Inklusivleistungen machen Ihren Aufenthalt zu etwas ganz Besonderem.
+  featured:
+    - id: computer-bild
+      text: Computer Bild
+      width: 120
+  secret-escapes:
+    - text: Über uns
+      link: /ueber-uns
+    - text: Kontakt &amp; Impressum
+      link: /kontakt-und-impressum
+    - text: Offene Stellen
+      link: https://careers.secretescapes.de/
+      full-link: true
+    - text: FAQ
+      link: /faq
+    - text: AGB
+      link: /agb
+    - text: Werden Sie Partner
+      link: /werdensiepartner
+    - text: Datenschutzhinweise
+      link: /datenschutzerklaerung
+    - text: Zahlungsinformationen
+      link: /zahlungsinformationen
+  collections:
+    - text: Aktivurlaub
+      link: /aktivurlaub/filter
+    - text: All-inclusive-Urlaub
+      link: /all-inclusive/filter
+    - text: Strandurlaub
+      link: /strandurlaub/filter
+    - text: Städtereisen
+      link: /stadtereisen/filter
+    - text: Boutique-Hotels
+      link: /boutiquehotels/filter
+    - text: Landhaus-Luxus & Natur
+      link: /landurlaub/filter
+    - text: Kreuzfahrten
+      link: /kreuzfahrten/filter
+    - text: Familienurlaub
+      link: /familienurlaub/filter
+    - text: Wellness-Auszeit
+      link: /wellnessauszeit/filter
+    - text: Flugreisen
+      link: /flugreisen/filter
+    - text: Honeymoon
+      link: /flitterwochen/filter
+    - text: Urlaub zu zweit
+      link: /romantisch/filter
+    - text: Skiurlaub
+      link: /ski/filter
+    - text: Wellness & Spa
+      link: /spa/filter
+    - text: Wintersonnenziele
+      link: /wintersonnenziele/filter
+    - text: Italien-Urlaub
+      link: /italien/filter
+    - text: Strandurlaub in Europa
+      link: /strandeuropa/filter
+    - text: Im Winterwunderland
+      link: /winterwonderland/filter
+    - text: Frühbucher-Angebote
+      link: /earlybird/filter
+    - text: Balearische Inseln
+      link: /balearen/filter
+    - text: Unsere Bestseller
+      link: /bestseller/filter
+    - text: Chalets & Apartments
+      link: /sofrei/filter
+    - text: Ganz weit weg
+      link: /ganzweitweg/filter
+    - text: Alpenauszeit
+      link: /alpenauszeit/filter
+    - text: Gourmeturlaub
+      link: /gourmeturlaub/filter
+    - text: Sommersonne
+      link: /sommersonne/filter
+    - text: Sonnenziel Kanaren
+      link: /kanaren/filter
+    - text: Fernreisen
+      link: /fernreisen/filter
+    - text: Reisekategorien
+      link: /reisekategorien/filter
+    - text: Spanien und Portugal
+      link: /spanienportugal/filter
+    - text: Göttliches Griechenland
+      link: /griechenland/filter
+    - text: Pauschalreisen
+      link: /rundreisen/filter
+    - text: Urlaub in Deutschland
+      link: /zuhause/filter
+    - text: Citytrips in Europa
+      link: /eucitytrips/filter
+    - text: Berge & Seen
+      link: /bergeundseen/filter
+    - text: Bucketlist
+      link: /bucketlist/filter
+    - text: Poolträume weltweit
+      link: /prachtpools/filter
+    - text: Nachhaltig reisen
+      link: /nachhaltig/filter
+    - text: Konfigurierbare Angebote
+      link: /catalogue/filter
+    - text: Stornierbare Angebote
+      link: /stornierbar/filter
+    - text: Länger bleiben, mehr sparen
+      link: /mehrurlaub/filter
+    - text: Frühlingsreisen 2022
+      link: /2022-fruehling/filter
+    - text: Sommerurlaub 2022
+      link: /2022-sommer/filter
+    - text: Herbstauszeiten 2022
+      link: /2022-herbst/filter
+    - text: Winterreisen 2022
+      link: /2022-winter/filter
+  social:
+    - id: facebook
+      text: Facebook
+      link: http://www.facebook.com/SecretEscapes.de
+    - id: instagram
+      text: Instagram
+      link: https://www.instagram.com/secretescapesde/
+    - id: twitter
+      text: Twitter
+      link: http://www.twitter.com/SecretEscapesDE

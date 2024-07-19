@@ -1,0 +1,35 @@
+.nav {
+  $nav-min-width: 330px;
+  @apply relative text-textBlack bg-white bg-opacity-75;
+  &__scroll-wrap {
+    @apply flex overflow-x-auto overflow-y-hidden;
+    &:before {
+      content: "";
+      @apply absolute top-0 right-0 bottom-0 h-14 w-14 bg-cover;
+      background-image: url("../img/icons/nav-arrow.svg");
+      transition: all 0.2s ease;
+    }
+    &:after {
+      content: "";
+      @apply pr-14;
+    }
+    @media (min-width: $(nav-min-width)) {
+      &:before,
+      &:after {
+        @apply hidden;
+      }
+    }
+    > div {
+      @apply flex flex-grow flex-shrink-0 items-stretch flex-col h-14;
+      &.is-current {
+        @apply bg-white border-2 border-primary-400 border-t-0 border-l-0 border-r-0;
+      }
+      & > a {
+        @apply flex items-center justify-center flex-grow px-6;
+        @media (min-width: $(nav-min-width)) {
+          @apply px-4;
+        }
+      }
+    }
+  }
+}

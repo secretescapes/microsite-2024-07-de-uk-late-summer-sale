@@ -1,0 +1,154 @@
+.header {
+  @apply relative bg-black text-white page-padding h-14 md:h-16 lg:h-20 2xl:h-32;
+  .wrap {
+    @apply h-full max-w-screen-3xl mx-auto flex items-center 2xl:justify-between;
+    .left {
+      @apply flex flex-1 items-center justify-start pr-2 2xl:hidden;
+      .icon {
+        @apply flex justify-start;
+        max-width: theme("spacing.5");
+        @screen lg {
+          max-width: theme("spacing.6");
+        }
+      }
+    }
+    .middle {
+      @apply flex flex-col flex-1 items-center justify-center px-2 2xl:pl-0 2xl:items-start;
+      flex-grow: 6;
+      @screen lg {
+        flex-grow: 1;
+      }
+      &__top {
+        @apply flex justify-between 2xl:w-full;
+      }
+      &__bottom {
+        @apply flex justify-between w-full;
+      }
+      .links {
+        @apply hidden mt-4 2xl:block;
+        > a {
+          @apply text-grey-50 hover:text-primary-400 whitespace-nowrap;
+          &:last-child {
+            @apply text-primary-400 hover:text-primary-500;
+          }
+        }
+        > * + * {
+          @apply ml-4;
+        }
+        .sub-menu {
+          @apply relative inline-block hover:text-primary-400 cursor-pointer;
+          &__content {
+            @apply hidden absolute left-0 z-50 w-72 bg-grey-700 p-3;
+            top: 3.25rem;
+          }
+          &.is-open {
+            @apply text-primary-400;
+            & .sub-menu__content {
+              @apply block;
+            }
+          }
+          &:hover svg path,
+          &.is-open svg path {
+            fill: theme("colors.primary.400");
+          }
+          > svg {
+            @apply transition-transform duration-200 ease-in inline-block ml-1;
+          }
+          &.is-open > svg {
+            @apply transform -rotate-180;
+          }
+          &__link {
+            @apply block text-grey-50 hover:text-primary-400 px-3 py-2;
+          }
+        }
+      }
+      .top-links {
+        @apply hidden 2xl:inline-flex align-top;
+        a {
+          @apply inline-block font-bold text-grey-100 text-sm;
+        }
+        a + a {
+          @apply ml-3;
+        }
+      }
+      .favourites {
+        @apply hidden 2xl:inline-block self-end;
+        svg {
+          @apply inline-block mr-1 mb-0.5;
+        }
+        &:hover,
+        &:hover svg path {
+          @apply text-primary-400;
+          fill: theme("colors.primary.400");
+        }
+      }
+      .logo {
+        @apply block w-full;
+        transform: translateY(5%);
+        max-width: 140px;
+        @screen md {
+          max-width: 160px;
+        }
+        @screen lg {
+          max-width: 200px;
+        }
+      }
+    }
+    .right {
+      @apply flex flex-1 items-center justify-end pl-2 2xl:flex-grow-0;
+      @screen 2xl {
+        flex-basis: auto;
+      }
+      .logo {
+        @apply hidden w-full lg:flex justify-end;
+        max-width: 120px;
+        @screen 2xl {
+          max-width: 150px;
+        }
+      }
+    }
+  }
+  .mobile-nav {
+    @apply fixed top-0 bottom-0 z-30 w-full max-w-screen-sm flex flex-col;
+    @apply bg-grey-700 bg-opacity-90 justify-between overflow-y-auto;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    &.is-closed {
+      @apply invisible opacity-0;
+      left: calc(theme("screens.sm") - (theme("screens.sm") * 2));
+    }
+    &.is-open {
+      @apply visible opacity-100 left-0;
+    }
+    .top {
+      @apply flex items-center h-14 md:h-16 lg:h-20 page-padding flex-shrink-0;
+      .icon {
+        @apply flex justify-start;
+        max-width: theme("spacing.5");
+        @screen lg {
+          max-width: theme("spacing.6");
+        }
+      }
+    }
+    .middle {
+      @apply page-padding flex flex-col flex-grow justify-center overscroll-y-auto;
+      > a {
+        @apply text-lg lg:text-xl text-grey-50 hover:text-primary-400 whitespace-nowrap py-2;
+        &:last-child {
+          @apply text-primary-400 hover:text-primary-500;
+        }
+      }
+      > a + a {
+        border-top: 1px theme("colors.grey.500") solid;
+      }
+    }
+    .bottom {
+      @apply block 2xl:hidden bg-grey-700 p-6 text-center;
+      .logo {
+        @apply inline-block;
+        max-width: 150px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.bg {
+  &__fixed {
+    @apply relative overflow-hidden;
+    &-wrap {
+      @apply absolute top-0 left-0 z-0 w-full h-full;
+      .svgclippaths & {
+        clip-path: inset(0);
+      }
+      &--shadow {
+        &:before,
+        &:after {
+          content: "";
+          @apply absolute left-0 right-0 block h-32 opacity-25 z-10;
+        }
+        &:before {
+          @apply top-0;
+          background: linear-gradient(
+            0deg,
+            rgba(#000, 0) 0%,
+            rgba(#000, 1) 100%
+          );
+        }
+        &:after {
+          @apply bottom-0;
+          background: linear-gradient(
+            0deg,
+            rgba(#000, 1) 0%,
+            rgba(#000, 0) 100%
+          );
+        }
+      }
+    }
+    &-img {
+      @apply absolute z-0 top-0 left-0 w-full h-full bg-textBlack bg-cover bg-center bg-no-repeat bg-fixed pointer-events-none;
+      .svgclippaths & {
+        @apply fixed bg-scroll;
+        transform: translateZ(0);
+        will-change: transform;
+      }
+    }
+    &-content {
+      @apply relative z-10;
+    }
+  }
+}

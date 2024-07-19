@@ -1,0 +1,14 @@
+optional: optional
+noScript: Bitte nutzen Sie JavaScript, um die richtige Darstellung des Gewinnspiels sicherzustellen.
+select: Please choose an option
+error:
+  text: Bitte ausfüllen
+  email:
+    blank: Bitte E-Mail-Adresse eingeben
+    wrong: Bitte gültige E-Mail-Adresse eingeben
+  radio: Bitte auswählen
+  checkbox: Bitte wählen Sie eine Antwort aus
+  select: Please select an option from this list
+  textarea: Please fill in a response over 100 characters
+  compInvalid: Leider erfüllen Sie nicht die Kriterien, um am Gewinnspiel teilzunehmen
+sending: Senden

@@ -1,0 +1,106 @@
+.offer-card {
+  @apply relative rounded overflow-hidden bg-white shadow-f2 transition-shadow;
+  &:hover {
+    @apply shadow-f4;
+  }
+  & > .link {
+    @apply absolute top-0 left-0 right-0 bottom-0;
+  }
+  .image {
+    @apply bg-grey-100;
+  }
+  .content {
+    @apply p-4;
+  }
+  .location {
+    @apply text-sm flex items-center leading-normal mb-1;
+    &:before {
+      content: "";
+      @apply inline-block mr-1.5 bg-no-repeat bg-center bg-contain flex-shrink-0;
+      width: 0.75rem;
+      height: 1.125rem;
+      background-image: url("../img/icons/pin.svg");
+    }
+  }
+  .title {
+    @apply font-bold text-lg leading-normal pb-2;
+  }
+  .bottom {
+    @apply flex justify-between pt-2;
+  }
+  .price {
+    @apply text-sm leading-tight;
+    span {
+      @apply text-xl font-bold text-primary-400;
+    }
+  }
+  .saving {
+    @apply inline-block border border-primary-400 text-primary-400 rounded text-center text-sm leading-tight py-1 px-2 ml-2;
+    > span {
+      @apply flex items-center justify-center text-xl font-bold;
+    }
+    $icon-size: 0.938rem;
+    &__icon {
+      @apply relative block ml-1 mt-0.5 z-10;
+      &:before {
+        content: "";
+        @apply block bg-no-repeat bg-center bg-contain flex-shrink-0;
+        width: $icon-size;
+        height: $icon-size;
+        background-image: url("../img/icons/info.svg");
+      }
+    }
+    .no-touch &:hover .saving__text,
+    & .saving__icon.is-shown .saving__text {
+      @apply block;
+    }
+    &__text {
+      @apply absolute right-0 bottom-5 z-40 font-normal text-sm text-left text-textBlack bg-white py-3 px-4 rounded shadow-f4 leading-normal hidden;
+      width: 1500%;
+    }
+  }
+  .tags {
+    @apply -m-1;
+    .tag {
+      @apply inline-flex items-center bg-black text-white m-1 px-2.5 py-1 rounded-lg leading-relaxed uppercase font-bold;
+      font-size: 0.625rem;
+      &--informational {
+        @apply normal-case font-semibold;
+        font-size: 0.75rem;
+      }
+      img {
+        @apply mr-1 w-3 h-3;
+      }
+    }
+  }
+  /****************************************************** empty loading state */
+  &.is-loading {
+    > * {
+      @apply animate-pulse;
+    }
+    .link {
+      @apply hidden;
+    }
+    .location {
+      @apply h-4 w-1/2 bg-grey-100;
+      &:before {
+        @apply hidden;
+      }
+    }
+    .title {
+      @apply h-10 bg-grey-100 mt-2;
+    }
+    .bottom {
+      @apply mt-6;
+    }
+    .price {
+      @apply h-12 w-28 bg-grey-100;
+    }
+    .saving {
+      @apply h-12 w-16 border-grey-100 bg-grey-100;
+    }
+  }
+  .no-js &.is-loading > * {
+    @apply animate-none;
+  }
+}

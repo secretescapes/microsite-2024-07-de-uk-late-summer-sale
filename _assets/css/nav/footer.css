@@ -1,0 +1,50 @@
+.footer {
+  @apply bg-black text-white page-padding py-8 overflow-x-hidden;
+  .wrap {
+    @apply max-w-screen-3xl mx-auto;
+  }
+  .title {
+    @apply flex items-center text-base font-bold mb-2;
+    > span {
+      @apply block flex-shrink-0;
+    }
+    &:after {
+      @apply block w-full ml-2 bg-grey-500;
+      content: "";
+      height: 1px;
+    }
+  }
+  .images {
+    @apply -mx-4;
+    > li {
+      @apply inline-block px-4 my-2;
+    }
+  }
+  .links {
+    @apply text-sm;
+    h1 {
+      @apply font-bold;
+    }
+    ul {
+      @apply -mx-0.5;
+    }
+    li {
+      @apply inline-block text-grey-100 px-0.5;
+    }
+  }
+  hr {
+    @apply my-6 lg:my-4 border-grey-500;
+  }
+  .top-row {
+    @apply mb-10 lg:mb-12;
+  }
+  .end-row {
+    @apply mt-8 text-sm;
+  }
+  .social-icons {
+    @apply flex sm:justify-end;
+    li + li {
+      @apply ml-2;
+    }
+  }
+}

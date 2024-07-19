@@ -1,0 +1,190 @@
+site: https://www.secretescapes.com
+
+header:
+  - text: Current deals
+    link: /current-sales
+  - text: Hotels
+    link: /hotel-stays/filter
+  - text: Package Holidays
+    link: /package-holidays/filter
+  - text: Trending destinations
+    sub:
+      - text: Iceland
+        link: /iceland-holidays-northern-lights/filter
+      - text: Sri Lanka
+        link: /search/search?query=Sri+Lanka&selectedTab=dates
+      - text: Maldives
+        link: /maldives-holidays/filter
+      - text: Canary Islands
+        link: /search/search?query=Canary+Islands
+      - text: Middle East
+        link: /search/search?query=middle+east
+  - text: Special offers
+    sub:
+      - text: Deals of the week
+        link: /time-limited-deals/filter
+      - text: Ending soon
+        link: /endingsoon/filter
+      - text: Brand new deals
+        link: /new-arrivals/filter
+      - text: Time-limited deals
+        link: /time-limited/filter
+  - text: Gift Vouchers
+    link: /vouchers-offer
+  - text: Inspire Me
+    link: https://magazine.secretescapes.com/
+    full-link: true
+
+header-fav:
+  text: My Favourites
+  link: /my-favourites
+
+header-right:
+  - text: Invite friends
+    link: /invite-friends
+  - text: Help Centre
+    link: /faq
+
+footer:
+  text:
+    featured: As featured in
+    secure: We are secure
+    collections: Collections
+  features:
+    - id: price
+      icon: rosette
+      title: Best price guarantee
+      description: Get the best hotel rates available online. Our low prices can't be beaten, that's a promise!
+    - id: picked
+      icon: hotel
+      title: Expertly hand-picked hotels
+      description: Exclusive membership to a wide selection of stylish hotels and holidays selected by our travel experts.
+    - id: extras
+      icon: serve
+      title: Added extras
+      description: We like to go the extra mile to make your stay even more special with our added extras and inclusions.
+  featured:
+    - id: conde-nast-traveller
+      text: Condé Nast Traveller
+      width: 82
+    - id: evening-standard
+      text: Evening Standard
+      width: 87
+    - id: the-sunday-times
+      text: The Sunday Times
+      width: 140
+    - id: techcrunch
+      text: TechCrunch
+      width: 135
+  atol: >
+    Some of the flights and flight-inclusive holidays on this website are financially protected by the ATOL scheme. But ATOL protection does not apply to all holiday and travel services listed on this website. This website will provide you with information on the protection that applies in the case of each holiday and travel service offered before you make your booking. If you do not receive an ATOL Certificate then the booking will not be ATOL protected. If you do receive an ATOL Certificate but all the parts of your trip are not listed on it, those parts will not be ATOL protected. Please see our booking conditions for information, or for more information about financial protection and the ATOL Certificate go to: www.caa.co.uk
+  secret-escapes:
+    - text: About us
+      link: /about-us
+    - text: Contact
+      link: /contact
+    - text: Jobs
+      link: https://careers.secretescapes.com/
+      full-link: true
+    - text: FAQ
+      link: /faq
+    - text: Terms and Conditions
+      link: /terms-and-conditions
+    - text: Bespoke holidays
+      link: /bespoke-travel
+    - text: Flight Finder
+      link: /flightFinder
+    - text: Modern Slavery Statement
+      link: https://d1x3cbuht6sy0f.cloudfront.net/legal/slaveryStatement.pdf
+      full-link: true
+    - text: Collections
+      link: /all-inclusive/filter
+    - text: "#smugface"
+      link: /smugface
+    - text: How it works
+      link: /how-it-works
+    - text: Add your Hotel
+      link: /uk/addyourhotel
+    - text: Privacy policy
+      link: /privacy-policy
+    - text: Gift Vouchers
+      link: /vouchers-offer
+  collections:
+    - text: Spa breaks
+      link: /spa/filter
+    - text: Boutique hotels
+      link: /boutique/filter
+    - text: Beach holidays
+      link: /beach/filter
+    - text: City breaks
+      link: /city/filter
+    - text: Activity holidays
+      link: /activities/filter
+    - text: Country breaks
+      link: /country/filter
+    - text: Holidays in Europe
+      link: /europe/filter
+    - text: Romantic breaks
+      link: /romantic/filter
+    - text: Skiing holidays
+      link: /ski/filter
+    - text: Family-friendly stays
+      link: /family/filter
+    - text: Holidays with flights
+      link: /flights/filter
+    - text: Summer holidays
+      link: /summer-holidays/filter
+    - text: Weekend breaks
+      link: /weekend-breaks/filter
+    - text: All-Inclusive Holidays
+      link: /all-inclusive/filter
+    - text: Honeymoon packages &amp; hotels
+      link: /honeymoon/filter
+    - text: Smart stays
+      link: /smartstays/filter
+    - text: Northern Lights Holidays
+      link: /northern-lights-iceland-lapland/filter
+    - text: UK countryside under £99
+      link: /uk-country-under-99/filter
+    - text: Winter wonderland
+      link: /winter-wonderland/filter
+    - text: London breaks
+      link: /london-stays/filter
+    - text: Far-Flung Sun Escapes
+      link: /far-flung-beach/filter
+    - text: New York City Breaks
+      link: /nyc-new-york/filter
+    - text: UK Spa Breaks
+      link: /uk-spa-breaks/filter
+    - text: Rome City Breaks
+      link: /rome-breaks/filter
+    - text: Paris City Breaks
+      link: /paris-breaks/filter
+    - text: Lake District Breaks
+      link: /lake-district-breaks/filter
+    - text: Greece Holidays
+      link: /greek-chic/filter
+    - text: Extraordinary escapes
+      link: /extraordinaryescapes/filter
+    - text: Adults-only Holidays
+      link: /adults-only-escapes-holidays/filter
+    - text: Autumn Escapes
+      link: /autumn-escapes/filter
+    - text: Our finest Scotland stays
+      link: /scotland-breaks-uk/filter
+    - text: Amsterdam Hotels
+      link: /amsterdam-breaks/filter
+    - text: Refundable stays
+      link: /refundable/filter
+    - text: Canary Islands Holidays
+      link: /canary-islands/filter
+  social:
+    - id: facebook
+      text: Facebook
+      link: http://www.facebook.com/SecretEscapes
+    - id: instagram
+      text: Instagram
+      link: https://www.instagram.com/secretescapes/
+    - id: twitter
+      text: Twitter
+      link: http://www.twitter.com/secret_escapes

@@ -1,0 +1,10 @@
+- title: Recommended
+  value: RELEVANCE
+- title: Highest discount
+  value: DISCOUNT
+- title: Lowest price
+  value: PRICE_ASC
+- title: Highest price
+  value: PRICE_DESC
+- title: Newest
+  value: NEWEST

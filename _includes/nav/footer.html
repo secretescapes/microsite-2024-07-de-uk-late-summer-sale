@@ -1,0 +1,103 @@
+{% assign footer = locale.core-nav.footer %}
+<footer class="footer">
+  <div class="wrap">
+    <div class="row row--4-4-4 row--gutter-sm mb-8">
+      {% for feature in footer.features %}
+        <div class="col text-center">
+          <div class="mx-auto" style="max-width: 18rem">
+            <img class="inline-block h-8 mb-2" src="{{site.img}}/icons/{{feature.icon}}.svg" alt="{{feature.icon}} icon">
+            <p class="font-bold">{{feature.title}}</p>
+            <p class="text-sm">{{feature.description}}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="top-row">
+      <div class="row">
+        <div class="col col--9">
+          <h1 class="title"><span>{{footer.text.featured}}</span></h1>
+          <ul class="images">
+            {% for item in footer.featured %}
+              <li>
+                <div style="max-width: {{item.width}}px;">
+                  <img
+                    src="{{site.img}}/logo/{{item.id}}.svg"
+                    alt="{{item.text }} logo"
+                  />
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col col--3">
+          <h1 class="title"><span>{{footer.text.secure}}</span></h1>
+          <a
+            class="block"
+            style="max-width: 70px"
+            href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&dn=www.secretescapes.com&lang=en"
+            target="_blank"
+            ><img
+              class="h-14"
+              src="{{site.img}}/logo/norton-secured.svg"
+              alt="Norton Secured logo"
+          /></a>
+        </div>
+      </div>
+    </div>
+    {% if footer.atol %}
+      <div class="row row--gutter-sm row--center mb-12 links">
+        <div class="col col--2">
+          <img class="h-24" src="{{site.img}}/logo/atol.svg" alt="ATOL protection logo - ATOL number: 11257">
+        </div>
+        <div class="col col--10">
+          <p class="text-sm text-grey-100">{{footer.atol}}</p>
+        </div>
+      </div>
+    {% endif %}
+    <div class="row row--gutter-sm links">
+      <div class="col col--2">
+        <h1>Secret Escapes</h1>
+      </div>
+      <div class="col col--10">
+        <ul>
+          {% for item in footer.secret-escapes %}
+            <li><a href="{% if item.full-link %}{{item.link}}{% else %}{{locale.core-nav.site}}{{item.link}}{% endif %}">{{item.text}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="row row--gutter-sm links">
+      <div class="col col--2">
+        <h1>{{footer.text.collections}}</h1>
+      </div>
+      <ul class="col col--10">
+        {% for item in footer.collections %}
+          <li><a href="{% if item.full-link %}{{item.link}}{% else %}{{locale.core-nav.site}}{{item.link}}{% endif %}">{{item.text}}</a></li>
+          {% unless forloop.last %}&#32;{% endunless %} <!-- keeps normal space on html minify -->
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="end-row">
+      <div class="row row--sm-6-6">
+        <div class="col">
+          © Copyright <span class="js-year">2023</span> Secret Escapes
+        </div>
+        <div class="col">
+          <ul class="social-icons">
+            {% for item in footer.social %}
+            <li>
+              <a href="{{item.link}}">
+                <img
+                  src="{{site.img}}/icons/{{item.id}}.svg"
+                  alt="{{item.text}} icon"
+                />
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

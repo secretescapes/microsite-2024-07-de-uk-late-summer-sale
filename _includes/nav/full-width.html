@@ -1,0 +1,16 @@
+<nav class="nav{% if include.dark %} nav--dark{% endif %}">
+  <div class="nav__scroll-wrap">
+    {% assign nav-pages = site.html_pages | where: 'nav', 'true' | sort: 'nav-order' %}
+    {% for nav-page in nav-pages %}
+      <div class="nav__item{% if page.id == nav-page.id or page.layout == nav-page.id %} is-current{% endif %}">
+        <a href="{{site.baseurl}}{{nav-page.url}}">
+          {% if nav-page.nav-title %}
+            {{nav-page.nav-title}}
+          {% else %}
+            {{nav-page.title}}
+          {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</nav>

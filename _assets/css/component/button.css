@@ -1,0 +1,49 @@
+.btn {
+  @apply inline-block py-3 px-6 rounded text-white font-bold shadow-f1;
+  @apply transition-all bg-gradient-to-t to-primary-300 via-primary-400 from-primary-500 bg-size-200 bg-pos-0;
+  &:hover {
+    @apply bg-pos-100;
+  }
+  &&--sm {
+    @apply py-2 px-4;
+  }
+  &&--lg {
+    @apply text-xl font-semibold py-3 px-12;
+  }
+  &&--secondary {
+    @apply bg-secondary-400;
+    background: linear-gradient(
+      0deg,
+      #0c7f8c 0%,
+      theme("colors.secondary.500") 100%
+    );
+  }
+  &&--partner {
+    @apply to-partner via-partner from-partner;
+  }
+}
+
+.btn-outline {
+  @apply relative inline-block py-3 px-6 rounded text-primary-300 font-bold transition-colors bg-transparent hover:bg-primary-400 hover:text-white;
+  &:before {
+    content: "";
+    @apply absolute top-0 left-0 right-0 bottom-0 rounded border border-primary-400;
+  }
+  &&--sm {
+    @apply py-2 px-4;
+  }
+  &&--secondary {
+    @apply text-secondary-500;
+    &:before {
+      @apply border-secondary-500;
+    }
+  }
+}
+
+.btn-outline-partner {
+  @apply relative inline-block py-3 px-6 rounded text-partner font-bold transition-colors bg-transparent hover:text-white hover:bg-partner;
+  &:before {
+    content: "";
+    @apply absolute top-0 left-0 right-0 bottom-0 rounded border border-partner;
+  }
+}

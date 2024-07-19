@@ -1,0 +1,21 @@
+---
+layout: standard
+---
+
+{% include var.html %}
+
+<div class="page-padding text-textBlack content-spacing bg-white">
+  <div class="mx-auto max-w-screen-lg py-20 text-center">
+    <p class="text-2xl font-bold font-display leading-normal">{{page.intro-title}}</p>
+    <p class="text-lg">{{page.intro}}</p>
+  </div>
+</div>
+
+<div class="page-padding content-spacing">
+  <div class="mx-auto max-w-screen-3xl pb-24">
+    {% include component/se-offers.html tag=page.offer-tag amount="50" %}
+    <div class="text-center pt-12">
+      <a href="{{site.baseurl}}" class="btn btn--lg">{{locale.general.back-to-deals}}</a>
+    </div>
+  </div>
+</div>

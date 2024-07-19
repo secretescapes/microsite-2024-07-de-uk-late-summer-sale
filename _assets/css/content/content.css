@@ -1,0 +1,68 @@
+.content-padding {
+  @apply px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12 lg:p-12 xl:p-16;
+  &--narrow {
+    @apply px-3 py-8 sm:px-4 sm:py-10 md:px-6 md:py-12 xl:px-12 xl:py-16;
+  }
+  &--sm {
+    @apply p-3 py-4 sm:p-4 md:p-6 xl:p-10;
+  }
+}
+
+.content-spacing {
+  * + p,
+  li + li,
+  * + ol,
+  * + ul {
+    @apply mt-2;
+  }
+  li {
+    @apply flex list-none;
+  }
+  ol {
+    counter-reset: mycounter;
+    > li {
+      &:before {
+        @apply pr-1;
+        content: counter(mycounter) ".";
+        counter-increment: mycounter;
+      }
+      ol,
+      ul {
+        @apply mt-2 pl-2 lg:pl-4;
+      }
+      > * {
+        @apply w-full; /* removes IE11 bug of text not wrapping on terms page */
+      }
+    }
+    &.continuing-list {
+      counter-reset: none;
+      &--start {
+        counter-reset: mycounter;
+      }
+    }
+    &.ol {
+      &--letters > li:before {
+        content: counter(mycounter, lower-alpha) ".";
+      }
+      &--roman > li:before {
+        content: counter(mycounter, lower-roman) ".";
+      }
+    }
+  }
+  ul li:before {
+    content: "•";
+    @apply pr-1 font-semibold;
+  }
+}
+
+.content-border {
+  @apply border border-grey-200 border-l-0 border-r-0 border-b-0;
+}
+
+.link {
+  @apply text-primary-400;
+  &:hover,
+  &:focus {
+    @apply underline;
+  }
+}

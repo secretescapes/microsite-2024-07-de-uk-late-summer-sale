@@ -1,0 +1,30 @@
+.page {
+  @apply relative bg-grey-50 pb-28 overflow-x-hidden;
+  &__bg {
+    @apply absolute z-0 w-full bg-grey-700 bg-cover bg-center;
+    &-space {
+      height: 40vh;
+      min-height: theme("screens.sm");
+      &--lg {
+        height: 66.66vh;
+        min-height: theme("screens.md");
+      }
+    }
+    &-fade {
+      height: theme("spacing.60");
+      background: linear-gradient(0deg, #f4f4f5 0%, rgba(#f4f4f5, 0) 100%);
+    }
+  }
+  &__header {
+    @apply flex justify-center items-center text-center mx-auto max-w-screen-3xl;
+    height: 40vh;
+    min-height: theme("screens.sm");
+    &--lg {
+      height: 66.66vh;
+      min-height: theme("screens.md");
+    }
+  }
+  &__content {
+    @apply relative z-10;
+  }
+}

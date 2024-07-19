@@ -1,0 +1,6 @@
+# special characters work with jquery-countdown plugin
+# docs: http://hilios.github.io/jQuery.countdown/documentation.html#formatter
+days: "%!D:day,days;"
+hours: "%!H:hour,hours;"
+mins: "%!M:min,mins;"
+secs: "%!S:sec,secs;"

@@ -1,0 +1,86 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "grid/grid.css";
+
+@import "nav/header.css";
+@import "nav/full-width.css";
+@import "nav/group.css";
+/* @import "nav/page.css"; */
+@import "nav/footer.css";
+
+@import "component/bg-ratio.css";
+@import "component/bg.css";
+@import "component/button.css";
+@import "component/icon.css";
+@import "component/offer-card.css";
+@import "component/offer-sort.css";
+@import "component/modal.css";
+@import "component/form.css";
+
+@import "content/content.css";
+@import "content/banner.css";
+@import "content/page.css";
+@import "content/bob.css";
+@import "content/titles.css";
+
+html {
+  /* set root value for REM - scales typography, spacing, etc to viewport */
+  font-size: 87.5%; /* = 14px */
+  @screen md {
+    font-size: 93.75%; /* = 15px */
+  }
+  @screen xl {
+    font-size: 100%; /* = 16px */
+  }
+}
+
+body {
+  /* font rendering options */
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* enable 100% height */
+body,
+html {
+  height: 100%;
+}
+
+/******************************************************************************/
+
+.photo-scatter {
+  .bg-ratio {
+    @apply border-8 border-white shadow-f4;
+  }
+  &__first {
+    z-index: 3;
+    transform: rotate(3deg);
+    @screen sm {
+      margin-left: 6%;
+    }
+  }
+  &__second {
+    z-index: 2;
+    transform: rotate(-2.5deg);
+    margin-top: -2%;
+    @screen sm {
+      margin-top: 6%;
+      margin-left: -4%;
+      margin-right: -1%;
+    }
+  }
+  &__third {
+    z-index: 1;
+    margin-top: -4%;
+    @screen sm {
+      margin-left: 3%;
+      margin-top: -10%;
+    }
+  }
+}

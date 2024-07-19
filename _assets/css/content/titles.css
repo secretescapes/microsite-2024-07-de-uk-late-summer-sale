@@ -1,0 +1,71 @@
+.h1 {
+  @apply font-serif font-bold leading-snug;
+  font-size: 3.2rem;
+  @screen md {
+    font-size: 3.5rem;
+  }
+}
+
+.h2 {
+  @apply font-serif font-bold leading-snug;
+  font-size: 2.7rem;
+  @screen md {
+    font-size: 3rem;
+  }
+}
+
+.h3 {
+  @apply font-serif font-bold leading-snug;
+  font-size: 2.2rem;
+  @screen md {
+    font-size: 2.5rem;
+  }
+}
+
+.h4 {
+  @apply font-serif font-bold leading-tight;
+  font-size: 1.7rem;
+  @screen md {
+    font-size: 2rem;
+  }
+}
+
+.h5 {
+  @apply font-serif font-bold text-2xl leading-tight;
+  font-size: 1.2rem;
+  @screen md {
+    font-size: 1.5rem;
+  }
+}
+
+.h--banner {
+  @apply font-serif font-bold leading-tight;
+  font-size: 4rem;
+  @screen sm {
+    font-size: 5rem;
+  }
+  @screen lg {
+    font-size: 6rem;
+  }
+  @screen 2xl {
+    font-size: 7rem;
+  }
+}
+
+.h--sub-banner {
+  @apply block font-sans text-lg sm:text-xl lg:text-2xl 2xl:text-3xl uppercase font-bold tracking-widest;
+}
+
+.h--comp {
+  @apply font-serif font-bold leading-tight;
+  font-size: 2.5rem;
+  @screen sm {
+    font-size: 3rem;
+  }
+  @screen lg {
+    font-size: 3.5rem;
+  }
+  @screen 2xl {
+    font-size: 4.25rem;
+  }
+}

@@ -1,0 +1,30 @@
+/* styles for the group drop down nav */
+
+.group-nav {
+  @apply absolute top-full z-20 w-full max-w-screen-3xl bg-white bg-opacity-80 hidden transform scale-y-0 transition origin-center origin-top;
+  &__link {
+    @apply relative h-48 flex-grow flex items-center justify-center uppercase font-semibold tracking-wider text-textBlack bg-cover;
+    &:before {
+      content: "";
+      @apply block absolute z-10 top-0 left-0 right-0 bottom-0 bg-white bg-opacity-60 transition-colors duration-200 ease-in-out;
+    }
+    span {
+      @apply relative z-20;
+    }
+    &.is-current:before {
+      @apply bg-opacity-80;
+    }
+    &:hover:before {
+      @apply bg-opacity-90;
+    }
+  }
+  @media (min-width: $(nav-min-width)) {
+    .no-touch & {
+      @apply flex;
+    }
+    .nav__item:hover + &,
+    &:hover {
+      @apply scale-y-100;
+    }
+  }
+}
