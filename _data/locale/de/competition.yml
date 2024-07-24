@@ -1,11 +1,11 @@
 enter: Jetzt teilnehmen
 chance-to-win: >
-  Für Ihre Chance zu gewinnen, füllen Sie einfach dieses Formular aus:
+  Bitte füllen Sie folgendes Formular aus, um am Gewinnspiel teilzunehmen:
 deals-heading: Template-Angebote
 entered:
   title: Viel Glück!
   description: Ihre Teilnahme wurde registriert. Der glückliche Gewinner wird persönlich kontaktiert.
   cta: Angebote ansehen
 ended:
-  title: Gewinnspiel beendet
-  description: Es kann nicht mehr teilgenommen werden.
+  title: Vielen Dank für Ihr Interesse
+  description: Das Gewinnspiel ist nun beendet und der glückliche Gewinner wird persönlich kontaktiert.

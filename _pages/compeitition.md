@@ -1,11 +1,11 @@
 ---
 layout: competition
 id: competition
-title: Win a pampering spa break for two, plus £500 cash!
+title: Gewinnen Sie eine Wellnessauszeit und 500&nbsp;€
 permalink: /competition/
 nav: true
 nav-order: 5
-nav-title: Win a spa stay
+nav-title: Gewinnspiel
 header-content: >
   <div class="mx-auto max-w-screen-2xl">
     <h1 class="h--comp">
@@ -13,17 +13,18 @@ header-content: >
     </h1>
   </div>
 
-intro: Does a relaxing spa stay for two in the picturesque Warwickshire countryside sound like just the ticket? We're giving away a two-night stay in a superior double room at a country manor house spa hotel complete with a 3-course meal on both nights, B&B, plus cream tea on your arrival day. If that wasn't enough to have you reaching for your robe and slippers, we're also throwing in £500 spending money to indulge yourselves during your stay.
+intro: >
+  Wie wäre es mit einer wohlverdienten Auszeit im idyllischen Norden Hessens? Wir verlosen zwei Übernachtungen im charmanten Romantik Hotel Stryckhaus, inklusive Frühstück und täglichem Zugang zum Spa-Bereich. Aber das ist noch nicht alles: Zusätzlich schenken wir Ihnen 500 € Taschengeld, damit Sie sich während Ihres Aufenthalts rundum verwöhnen lassen können – sei es mit entspannenden Wellnessanwendungen oder kulinarischen Genüssen im hoteleigenen Restaurant. Machen Sie mit für Ihre Chance auf unvergessliche Momente im Hochsauerland.
 intro-terms: >
-  For full T&Cs read <a href="#modal-competition-terms" class="js-open-modal underline">here</a>
+  Die Allgemeinen Geschäftsbedingungen finden Sie <a href="#modal-competition-terms" class="js-open-modal underline">hier</a>.
 
 hotels:
   - id: resort
-    title: An elegant spa & golf resort awaits!
-    description: With wonderful wellness facilities and delicious dining, this is an idyllic spot for a little pre or post-holiday R&R! This elegant hotel is equipped with an 18-hole golf course and a leisure centre with heated indoor pool, Jacuzzi, sauna, steam room, gym and dance studio, plus three squash courts and three tennis courts.
+    title: Exklusive Entspannung
+    description: Versetzen Sie sich in Urlaubsstimmung in diesem gemütlichen Hotel, dessen großzügiger Spa-Bereich zum Relaxen einlädt. Eine finnische Sauna, eine Dampfsauna, ein Kneippbecken, eine Kräuterdampfgrotte und ein Solebad machen das Romantik Hotel Stryckhaus zu einer wahren Oase der Erholung.
   - id: money
-    title: £500 to pamper you both!
-    description: As well as the relaxing two-night break, we're also throwing in £500 spending money for you to really get the VIP-treatment during your stay. Book yourself a soothing massage, rejuvenating facial, or celebrate over a bottle of bubbly. We want you to feel truly spoiled!
+    title: 500 € Taschengeld
+    description: Zusätzlich schenken wir Ihnen 500 € Taschengeld, damit Sie sich während Ihres Aufenthalts wie ein Star fühlen können. Genießen Sie eine wohltuende Massage, eine belebende Gesichtsbehandlung oder ein exquisites 3-Gänge-Menü. Lassen Sie sich von Kopf bis Fuß verwöhnen und erleben Sie Luxus pur!
 
 competition-form:
   id: comp
@@ -40,28 +41,28 @@ competition-form:
       required: true
     - id: qualify
       type: radio
-      label: Are you a UK resident and over the age of 18?
+      label: Sind Sie ansässig in Deutschland/Österreich und über 18 Jahre alt?
       required: true
       options:
         - id: qualify-true
-          label: "Yes"
+          label: "Ja"
           value: "yes"
         - id: qualify-false
-          label: "No"
+          label: "Nein"
           value: "no"
           invalid: true
     - id: opt-in
       type: radio
-      label: Secret Escapes Limited would like to contact you about other offers, promotions and services that may interest you. Please indicate if you would like to receive our newsletter. For more information, you can consult our privacy and cookie policy.
+      label: Secret Escapes Limited würde Sie gerne über andere Angebote, Aktionen und Dienstleistungen informieren, die Sie interessieren könnten. Bitte geben Sie an, falls Sie unseren Newsletter erhalten möchten. Für weitere Informationen können Sie unsere Datenschutz- und Cookie-Richtlinie konsultieren.
       required: true
       options:
         - id: opt-in-true
-          label: "Yes"
+          label: "Ja"
           value: "yes"
         - id: opt-in-false
-          label: "No"
+          label: "Nein"
           value: "no"
-  submit: Submit Entry
+  submit: Absenden
   terms: >
-    If you send in your data, you also agree to our <a href="#modal-competition-terms" class="js-open-modal underline">terms and conditions</a> for the competition.
+    Wenn Sie Ihre Daten einsenden, erklären Sie sich gleichzeitig mit unseren <a href="#modal-competition-terms" class="js-open-modal underline">AGB zum Gewinnspiel</a> einverstanden
 ---

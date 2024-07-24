@@ -1,7 +1,7 @@
 ---
 layout: competition
 id: competition
-title: Win a pampering spa break for two, plus £500 cash!
+title: Gewinnen Sie eine Wellnessauszeit und 500&nbsp;€
 permalink: /competition/entered/
 nav: false
 header-content: >
