@@ -1,6 +1,6 @@
 $nav-min-width: 760px;
 .nav {
-  @apply relative text-black bg-white bg-opacity-90;
+  @apply relative text-black bg-grey-100 bg-opacity-90;
   &__scroll-wrap {
     @apply flex max-w-screen-3xl mx-auto overflow-x-auto overflow-y-hidden border-r border-white border-opacity-50;
     &:before {
