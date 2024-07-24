@@ -16,7 +16,9 @@ layout: standard
         </div>
         <div class="text content-spacing">
           <h3 class="h2">{{topic-page.title}}</h3>
-          <p class="text-lg">{{topic-page.intro}}</p>
+          {% for intro in topic-page.intro %}
+            <p class="text-lg">{{intro}}</p>
+          {% endfor %}
           <div class="h-4"></div>
           <a href="{{site.baseurl}}{{topic-page.url}}" class="btn">{{locale.general.see-deals}}</a>
         </div>
