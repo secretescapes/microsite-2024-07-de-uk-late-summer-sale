@@ -1,10 +1,9 @@
 ---
-published: false
 layout: standard
 id: new-deals
 title: Neue Deals
 permalink: /neue-deals/
-nav: true
+nav: false
 nav-order: 2
 intro: >
   Sie haben richtig gelesen: Ab sofort finden Sie noch mehr Top-Deals in unserem Spätsommer-Sale. Buchen Sie Ihr nächstes Abenteuer jetzt zu Tiefstpreisen!
