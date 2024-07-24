@@ -7,7 +7,9 @@ layout: standard
 
 <div class="page-padding text-textBlack content-spacing">
   <div class="mx-auto max-w-screen-lg pt-20 text-center">
-    <p class="text-2xl font-bold font-display leading-normal">{{comp-page.intro-title}}</p>
+    {% if comp-page.intro-title %}
+      <p class="text-2xl font-bold font-display leading-normal">{{comp-page.intro-title}}</p>
+    {% endif %}
     <p class="text-lg">{{comp-page.intro}}</p>
     <p class="text-lg">{{comp-page.intro-terms}}</p>
     <div class="h-4"></div>
@@ -30,12 +32,14 @@ layout: standard
           </div>
           <div class="text">
             <h2 class="h4">{{item.title}}</h2>
-            <div class="flex items-center gap-2.5 pt-3 pb-1">
-              <img src="{{site.img}}/icons/hotel-plain.svg" alt="hotel icon">
-              <div class="uppercase tracking-wide font-semibold">
-                {{item.hotel}}
+            {% if item.hotel %}
+              <div class="flex items-center gap-2.5 pt-3 pb-1">
+                <img src="{{site.img}}/icons/hotel-plain.svg" alt="hotel icon">
+                <div class="uppercase tracking-wide font-semibold">
+                  {{item.hotel}}
+                </div>
               </div>
-            </div>
+            {% endif %}
             <p class="text-lg">{{item.description}}</p>
           </div>
         </div>

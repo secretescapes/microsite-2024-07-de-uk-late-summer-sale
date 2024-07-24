@@ -1,6 +1,6 @@
 enter: Enter Now
 chance-to-win: >
-  For your chance to win, simply enter your name and email address here:
+  Fill in your details below for your chance to win this incredible holiday!
 deals-heading: Template deals
 entered:
   title: You’ve successfully entered. Good&nbsp;luck!
@@ -8,4 +8,4 @@ entered:
   cta: See deals
 ended:
   title: Thank you for your interest
-  description: This competition has now ended and the lucky winners will be contacted directly.
+  description: The giveaway has now ended and the lucky winner will be contacted directly.
