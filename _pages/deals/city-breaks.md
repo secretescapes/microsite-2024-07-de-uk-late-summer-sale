@@ -10,7 +10,6 @@ header-content: >
     Städte&shy;trips
   </h1>
 intro:
-  - Sommer in der City? Na klar!
   - Lust auf Kunst, Kultur und Kulinarik? In unserem großen Spätsommer-Sale finden Sie luxuriöse City-Hotels zu unwiderstehlichen Tiefstpreisen. Freuen Sie sich auf erlebnisreiche Tage in den aufregensten europäischen Metropolen mit dieser handverlesenen Auswahl an Angeboten mit riesigen Rabatten.
 intro-title: Aufregende Städtetrips
 offer-tag: zz_DE_SummerCity
