@@ -61,26 +61,26 @@ html {
   &__first {
     z-index: 3;
     transform: rotate(3deg);
-    @screen sm {
-      margin-left: 6%;
-    }
   }
   &__second {
     z-index: 2;
     transform: rotate(-2.5deg);
     margin-top: -2%;
     @screen sm {
-      margin-top: 6%;
-      margin-left: -4%;
+      margin-top: 12%;
+      margin-left: -5%;
       margin-right: -1%;
     }
   }
   &__third {
     z-index: 1;
     margin-top: -4%;
+    margin-bottom: 1.5%;
     @screen sm {
-      margin-left: 3%;
       margin-top: -10%;
+    }
+    @screen 2xl {
+      margin-bottom: 0%;
     }
   }
 }
