@@ -1,10 +1,9 @@
 ---
-published: false
 layout: standard
 id: new-deals
 title: New Deals
 permalink: /new-deals/
-nav: true
+nav: false
 nav-order: 2
 intro: We've just launched loads more deals into our sale to give you even more options for your next escape. With unbelievable discounts, now's the time to book your next holiday at a bargain price.
 header-content: >
