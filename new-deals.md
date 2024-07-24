@@ -1,4 +1,5 @@
 ---
+published: false
 layout: standard
 id: new-deals
 title: New Deals
