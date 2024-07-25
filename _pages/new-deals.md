@@ -7,7 +7,7 @@ nav: false
 nav-order: 2
 intro: We've just launched loads more deals into our sale to give you even more options for your next escape. With unbelievable discounts, now's the time to book your next holiday at a bargain price.
 header-content: >
-  <h1 class="mx-auto" style="max-width: 28rem;">
+  <h1 class="mx-auto px-6 sm:px-12 lg:px-0" style="max-width: 28rem;">
     <img src="{{site.img}}/content/{{page.id}}/title.png" alt="{{site.title}} - New Deals Added">
   </h1>
 ---

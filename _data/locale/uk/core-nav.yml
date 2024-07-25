@@ -31,9 +31,9 @@ header:
         link: /time-limited/filter
   - text: Gift Vouchers
     link: /vouchers-offer
-  - text: Inspire Me
-    link: https://magazine.secretescapes.com/
-    full-link: true
+  # - text: Inspire Me
+  #   link: https://magazine.secretescapes.com/
+  #   full-link: true
 
 header-fav:
   text: My Favourites

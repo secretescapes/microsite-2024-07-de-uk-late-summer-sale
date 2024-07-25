@@ -27,8 +27,8 @@ hotels:
 
 competition-form:
   id: comp
-  post-url: "#getform-url"
-  expiry-date: 2050-01-01
+  post-url: https://getform.io/f/bkkgpwxb
+  expiry-date: 2024-08-06
   fields:
     - id: name
       type: text
