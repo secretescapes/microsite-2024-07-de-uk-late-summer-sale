@@ -5,7 +5,7 @@ title: Alle Angebote im Sale
 nav: true
 nav-order: 1
 header-content: >
-  <h1 class="mx-auto" style="max-width: 42rem;">
+  <h1 class="mx-auto px-4 md:px-8 xl:px-0" style="max-width: 42rem;">
     <img src="{{site.img}}/content/{{page.id}}/title.png" alt="{{site.title}}">
   </h1>
 ---

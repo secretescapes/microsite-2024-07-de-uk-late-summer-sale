@@ -8,7 +8,7 @@ nav-order: 2
 intro: >
   Sie haben richtig gelesen: Ab sofort finden Sie noch mehr Top-Deals in unserem Spätsommer-Sale. Buchen Sie Ihr nächstes Abenteuer jetzt zu Tiefstpreisen!
 header-content: >
-  <h1 class="mx-auto" style="max-width: 32rem;">
+  <h1 class="mx-auto px-6 sm:px-12 lg:px-0" style="max-width: 32rem;">
     <img src="{{site.img}}/content/{{page.id}}/title.png" alt="{{site.title}} - Neue Angebote">
   </h1>
 ---

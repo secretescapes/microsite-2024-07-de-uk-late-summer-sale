@@ -31,9 +31,9 @@ header:
         link: /zeitlich-begrenzte/filter
   - text: Gutscheine
     link: /vouchers-offer
-  - text: Inspirieren lassen
-    link: https://magazine.secretescapes.de/
-    full-link: true
+  # - text: Inspirieren lassen
+  #   link: https://magazine.secretescapes.de/
+  #   full-link: true
 
 header-fav:
   text: Meine Favoriten
