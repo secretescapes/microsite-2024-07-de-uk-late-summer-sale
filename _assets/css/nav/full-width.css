@@ -1,4 +1,4 @@
-$nav-min-width: 500px;
+$nav-min-width: 580px;
 .nav {
   @apply relative text-black bg-grey-100 bg-opacity-90;
   &__scroll-wrap {
