@@ -12,10 +12,8 @@ header-content: >
 
 <div class="page-padding text-textBlack content-spacing bg-white">
   <div class="mx-auto max-w-screen-lg py-20 text-center">
-    <h2 class="h4">Noch mehr sparen im Spätsommer-Sale!</h2>
-    <p class="text-lg">Entdecken Sie Top-Angebote zu Tiefstpreisen!</p>
-    <p class="text-lg">{{site.description}}</p>
-    <p class="text-lg">Lassen Sie sich von unseren Sale-Kollektionen inspirieren und entdecken Sie Ihren nächsten Traumurlaub.</p>
+    <h2 class="h4">Achtung, diese Deals enden bald!</h2>
+    <p class="text-lg">Die schönsten Dinge sind flüchtig – das gilt auch für einige Top-Deals in unserem Spätsommer-Sale! Sichern Sie sich jetzt noch riesige Rabatte, bevor diese unwiderstehlichen Angebote den Abflug machen!</p>
     {% include countdown.html message="Der Spätsommer-Sale endet in:" class="text-lg" %}
   </div>
 </div>
