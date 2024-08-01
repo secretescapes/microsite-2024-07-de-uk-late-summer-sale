@@ -12,10 +12,8 @@ header-content: >
 
 <div class="page-padding text-textBlack content-spacing bg-white">
   <div class="mx-auto max-w-screen-lg py-20 text-center">
-    <h2 class="h4">Bigger savings in the Late-Summer Sale!</h2>
-    <p class="text-lg">Get the lowest prices on amazing deals and destinations around the world!</p>
-    <p class="text-lg">{{site.description}}</p>
-    <p class="text-lg">Browse our dreamy collections to find a bargain escape you can't refuse! </p>
+    <h2 class="h4">Hurry! Late-Summer Sale ends soon</h2>
+    <p class="text-lg">Our Late-Summer Sale deals are SO good they can't stick around forever! Bag a bargain on these exclusive offers right now in the sale. Quick, these deals end soon!</p>
     {% include countdown.html message="The Late-Summer Sale ends in:" class="text-lg" %}
   </div>
 </div>
