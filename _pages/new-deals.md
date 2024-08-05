@@ -13,11 +13,13 @@ header-content: >
   </h1>
 ---
 
+{% include var.html %}
+
 <div class="page-padding text-textBlack content-spacing bg-white">
   <div class="mx-auto max-w-screen-lg py-20 text-center">
-    <h2 class="h5">Neue Angebote im Spätsommer-Sale</h2>
-    <p class="text-lg">{{page.intro}}</p>
-    {% include countdown.html message="Der Spätsommer-Sale endet in:" class="text-lg" %}
+    <h2 class="h4">Unser Spätsommer-Sale ist nun beendet. Lassen Sie sich von unseren aktuellen Angeboten inspirieren.</h2>
+    <div class="h-4"></div>
+    <a href="{{locale.core-nav.site}}{{locale.core-nav.header[0].link}}" class="btn">{{locale.core-nav.header[0].text}}</a>
   </div>
 </div>
 
